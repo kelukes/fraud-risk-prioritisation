@@ -1,0 +1,31 @@
+# --- Data (do not commit raw datasets) ---
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/*.json
+data/*.zip
+data/*.gz
+
+# Allow documentation files in data/
+!data/*.md
+
+# --- Jupyter / Python artifacts ---
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# --- Local env / secrets ---
+.env
+.venv/
+venv/
+.envrc
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Model artifacts / outputs (if any) ---
+*.pkl
+*.joblib
+*.cbm
+*.onnx
